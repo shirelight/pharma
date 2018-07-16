@@ -22,7 +22,7 @@ def main():
             pname, dname = data[1]+data[2], data[3]
             if dname not in drug_name:
                 drug_name[dname] = Sumdrug(dname)
-            drug_name[dname].add_val(float(data[-1]), pname)
+            drug_name[dname].add_val(int(data[-1]), pname)
     for dname in drug_name:
         heappush(drug_price, [-drug_name[dname].total, dname])
     with open(outfile, "w") as ofile:
