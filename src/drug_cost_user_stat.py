@@ -1,4 +1,3 @@
-main()
 class Sumdrug():
     def __init__(self, dname):
         self.name = dname
