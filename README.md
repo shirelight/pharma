@@ -9,9 +9,10 @@ Imagine you are a data engineer working for an online pharmacy. You are asked to
 
 # Approach to solving the problem
 The algorithm in the script is designed for the purpose of fast processing of large amount of data. Therefore, data format checking is not done within the script (it should be done before running the script). Printing and I/O is reduced to minimum. Data is processed line by line and never fully loaded to the memory to save time and space. A parallel version is not implemented, for the current performance with the provided complete dataset (see test dataset) is fine.
+NOTE: an examination of the complete over 1G dataset shows that drug costs are not necessarily integers as given in the simple example in the instructions. However, integer format is used for drug cost in the script to pass the test in the simulated environment provided. Change it to float if float is desired.
 
 # Running instructions
-See run.sh
+See run.sh. The input name is currently *.txt (assuming only one txt file exits in the input directory!! Change the name as needed)
 
 # Test dataset
 Three test dataset are included in the testsuite. The first one is the small testset from the instructions. The second one is extracted from the complete 24 million records dataset de_cc_data.txt by using every 1000 lines. The third one is generated in a similar way, but starting from the 10th record for every 1000 lines. Both are well tested and can be done within 0.1s.
