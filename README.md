@@ -15,6 +15,6 @@ NOTE: an examination of the complete over 1G dataset shows that drug costs are n
 See run.sh. The input name is currently *.txt (assuming only one txt file exits in the input directory!! Change the name as needed)
 
 # Test dataset
-The repo structure and code passed the provided test environment. \n
+The repo structure and code passed the provided test environment.
 Four test dataset are included in the testsuite. The first one is the small testset from the instructions. The second one is extracted from the complete 24 million records dataset de_cc_data.txt by using every 1000 lines. The third one is generated in a similar way, but starting from the 10th record for every 1000 lines. Both are well tested and can be done within 0.1s.
 The complete 24 million record dataset is also tested using the script. The full dataset is not included due to the large size of the file. The output is uploaded. The one-time tested running time is 73.72s on a 2.4 GHz intel i5 Macbook (2013 version).
