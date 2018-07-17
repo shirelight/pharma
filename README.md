@@ -6,22 +6,6 @@
 
 # Problem
 Imagine you are a data engineer working for an online pharmacy. You are asked to generate a list of all drugs, the total number of UNIQUE individuals who prescribed the medication, and the total drug cost, which must be listed in descending order based on the total drug cost and if there is a tie, drug name. 
-For example
-
-If your input data, itcont.txt, is
-
-id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost
-1000000001,Smith,James,AMBIEN,100
-1000000002,Garcia,Maria,AMBIEN,200
-1000000003,Johnson,James,CHLORPROMAZINE,1000
-1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000
-1000000005,Smith,David,BENZTROPINE MESYLATE,1500
-then your output file, top_cost_drug.txt, would contain the following lines
-
-drug_name,num_prescriber,total_cost
-CHLORPROMAZINE,2,3000
-BENZTROPINE MESYLATE,1,1500
-AMBIEN,2,300
 
 # Approach to solving the problem
 The algorithm in the script is designed for the purpose of fast processing of large amount of data. Therefore, data format checking is not done within the script (it should be done before running the script). Printing and I/O is reduced to minimum. Data is processed line by line and never fully loaded to the memory to save time and space. A parallel version is not implemented, for the current performance with the provided complete dataset (see test dataset) is fine.
